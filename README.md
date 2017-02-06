@@ -1,6 +1,9 @@
 # FireInbox
 It's a web app for
 
+DEMO https://inbox-4d6ac.firebaseapp.com
+
+
 So we have two types of requests, Ajax and firebase
 we have there one class named as AjaxRequest which contain all methods of send...
 if you wanna send a message using AjaxRequest you need to call
