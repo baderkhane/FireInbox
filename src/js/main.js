@@ -27,7 +27,10 @@ mFireBase.getMessage(function (snapshot){
 mFireBase.messageRemoved(function (snapshot){
   removeRowTable(snapshot.key);
 });
-
+/**
+ * [addRowTable add row dynamicly ]
+ * @param {[type]} data [object contain id and message and object and state of message]
+ */
 function addRowTable(data){
   let $dom = "<tr><td><input type='checkbox' name='' value='' /></td><td class='obj_msg'></td><td class='body_msg'></td><td class='state_msg'></td></tr>";
   $('.table').find('tbody').append($dom);
@@ -37,6 +40,10 @@ function addRowTable(data){
   $domElement.find('.body_msg').text(data.message);
   $domElement.find('.state_msg').text(data.etat);
 }
+/**
+ * [removeRowTable description]
+ * @param  {[type]} id [id message]
+ */
 function removeRowTable(id){
   $("#" + id).slideUp(500, function(){
     $(this).remove();

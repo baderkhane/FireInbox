@@ -1,5 +1,6 @@
 export class AjaxRequest extends ApiManager{
   constructor(url) {
+      super();
       this.url = url;
   }
 

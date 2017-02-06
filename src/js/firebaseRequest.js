@@ -1,9 +1,14 @@
 export class FireBaseRequest extends ApiManager{
   constructor(config) {
+    super();
     firebase.initializeApp(config);
     this.instanceDb = firebase.database().ref('inbox/');
   }
-
+  /**
+   * [saveMessage description]
+   * @param  {[type]} message [description]
+   * @return {[type]}         [description]
+   */
   saveMessage(message){
     console.log(message);
     this.instanceDb.push({
