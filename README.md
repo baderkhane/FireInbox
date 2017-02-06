@@ -9,6 +9,6 @@ if you wanna send a message using AjaxRequest you need to call
 let mAjaxRequest = new AjaxRequest(URL);
 //Calling the method of save
 let msg = new Message("object message", "message", 'type of message');
-mAjaxRequest.saveMessage(msg); 
+mAjaxRequest.saveMessage(msg);
 
 ```
